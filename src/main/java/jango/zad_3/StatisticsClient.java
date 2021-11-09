@@ -11,8 +11,7 @@ import org.springframework.web.client.RestTemplate;
 @Component
 public class StatisticsClient {
 
-    @Autowired
-    private RestTemplate restTemplate;
+    private RestTemplate restTemplate = new RestTemplate();
 
     public StatisticsResponse stringStatistics(StatisticsRequest statisticsRequest) {
         RequestEntity<StatisticsRequest> request = RequestEntity
