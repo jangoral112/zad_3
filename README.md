@@ -1,5 +1,5 @@
 # DOCUMENTATION
-##API
+## API
 
 **Application port**: 8081  <br />
 **Protocol**: http
@@ -61,6 +61,6 @@ uppercaseLetters,lowercaseLetters,digits,specialCharacters,combinationHits
 Long,Long,Long,Long,Long
 ```
 
-##Requirements
+## Requirements
 
 Service requires access to service that calculates statistics for string under port `8080` with accessible path `/statistics`
