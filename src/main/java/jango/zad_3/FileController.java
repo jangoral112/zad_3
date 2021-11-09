@@ -21,7 +21,7 @@ public class FileController {
 
     @PostMapping("/statistics/file/{format}")
     public ResponseEntity<byte[]> createStatistics(@PathVariable("format") String format,
-        @RequestBody StatisticsFileRequest request) throws IOException {
+        @RequestBody StatisticsRequest request) throws IOException {
 
         InputStream in = fileService.stringStatisticsAsFile(format, request);
 

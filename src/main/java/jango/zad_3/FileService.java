@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class FileService {
 
-    public InputStream stringStatisticsAsFile(String format, StatisticsFileRequest request) {
+    public InputStream stringStatisticsAsFile(String format, StatisticsRequest request) {
         return null;
     }
 }
