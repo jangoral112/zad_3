@@ -16,7 +16,7 @@ public class StatisticsClient {
 
     public StatisticsResponse stringStatistics(StatisticsRequest statisticsRequest) {
         RequestEntity<StatisticsRequest> request = RequestEntity
-            .post("http://localhost:8090/statistics")
+            .post("http://localhost:8080/statistics")
             .headers(headers -> {
                 headers.setContentType(MediaType.APPLICATION_JSON);
                 headers.setAccept(List.of(MediaType.APPLICATION_JSON));
